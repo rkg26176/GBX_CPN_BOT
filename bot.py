@@ -1,4 +1,4 @@
-from aiogram import Bot, Dispatcher
+from keep_alive import keep_alivefrom aiogram import Bot, Dispatcher
 from aiogram.filters import CommandStart
 from aiogram.types import Message
 import asyncio
@@ -15,4 +15,5 @@ async def start(message: Message):
 async def main():
     await dp.start_polling(bot)
 
+keep_alive()
 asyncio.run(main())
